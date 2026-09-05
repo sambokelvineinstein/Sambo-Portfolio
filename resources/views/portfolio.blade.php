@@ -18,7 +18,6 @@
                 <p class="text-gray-400 text-sm mt-1">📧 {{ $profile['email'] }} | 📞 {{ $profile['phone'] }}</p>
                 <div class="mt-3 flex gap-3">
                     <a href="{{ $profile['github'] }}" target="_blank" class="px-3 py-1 bg-gray-700 hover:bg-gray-600 text-xs text-white rounded">GitHub</a>
-                    <a href="{{ $profile['linkedin'] }}" target="_blank" class="px-3 py-1 bg-cyan-600 hover:bg-cyan-500 text-xs text-white rounded">LinkedIn</a>
                 </div>
             </div>
         </div>
@@ -30,9 +29,27 @@
         <!-- Education -->
         <section class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md">
             <h2 class="text-xl font-bold text-cyan-400 mb-4 border-b border-gray-700 pb-2">🎓 Education</h2>
-            <h3 class="text-lg font-semibold text-white">{{ $profile['program'] }}</h3>
-            <p class="text-gray-300">{{ $profile['school'] }}</p>
-            <p class="text-gray-400 text-sm mt-2">{{ $profile['graduation'] }}</p>
+            
+            <!-- College -->
+            <div class="mb-4">
+                <h3 class="text-lg font-semibold text-white">{{ $profile['education']['college']['program'] }}</h3>
+                <p class="text-gray-300">{{ $profile['education']['college']['school'] }}</p>
+                <p class="text-gray-400 text-xs mt-1">{{ $profile['education']['college']['year'] }}</p>
+            </div>
+
+            <!-- Senior High School -->
+            <div class="mb-4 border-t border-gray-700/50 pt-3">
+                <h3 class="text-base font-semibold text-white">{{ $profile['education']['senior_high']['track'] }}</h3>
+                <p class="text-gray-300 text-sm">{{ $profile['education']['senior_high']['school'] }}</p>
+                <p class="text-gray-400 text-xs mt-1">{{ $profile['education']['senior_high']['year'] }}</p>
+            </div>
+
+            <!-- Elementary -->
+            <div class="border-t border-gray-700/50 pt-3">
+                <h3 class="text-base font-semibold text-white">Elementary Education</h3>
+                <p class="text-gray-300 text-sm">{{ $profile['education']['elementary']['school'] }}</p>
+                <p class="text-gray-400 text-xs mt-1">{{ $profile['education']['elementary']['year'] }}</p>
+            </div>
         </section>
 
         <!-- Certifications -->
