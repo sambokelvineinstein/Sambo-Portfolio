@@ -12,8 +12,8 @@ class PortfolioController extends Controller
             'name' => 'Kelvin Einstein Sambo',
             'title' => 'Web Developer',
             'avatar' => 'images/profile.jpg',
-            'email' => 'laurenceandrew@example.com',
-            'phone' => '+63 912 345 6789',
+            'email' => 'sambokelvin636@gmail.com',
+            'phone' => '+63 920 619 7123',
             'github' => 'https://github.com/sambokelvineinstein/Sambo-Portfolio',
             'education' => [
                 'college' => [
@@ -22,20 +22,18 @@ class PortfolioController extends Controller
                     'year' => 'Expected Graduation: 2027'
                 ],
                 'senior_high' => [
-                    'track' => 'TVL - Information and Communications Technology (ICT)',
-                    'school' => 'Data Center College of the Philippines - Bangued',
-                    'year' => 'Graduated: 2023'
+                    'track' => 'HUMSS - Humanities and Social Sciences',
+                    'school' => 'Little Flower High School',
+                    'year' => 'Graduated: 2021'
                 ],
                 'elementary' => [
-                    'school' => 'Bangued Central School',
-                    'year' => 'Graduated: 2017'
+                    'school' => 'Calot Elementary School',
+                    'year' => 'Graduated: 2015'
                 ]
             ],
             'skills' => ['PHP', 'Laravel', 'MySQL', 'JavaScript', 'Tailwind CSS', 'VB.NET', 'Git & GitHub'],
             'certifications' => [
-                'Civil Service Eligibility (CSE)',
-                'Web Development Short Course - DCCP',
-                'Laravel Framework Fundamentals'
+                'Online Safety Through Netiquette - DICT Region II Webinar',
             ]
         ];
 
